@@ -1,0 +1,139 @@
+.about {
+    max-width: 1480px;
+    margin: 0 auto;
+
+    &__wrapper {
+        display: flex;
+        padding: 6rem;
+        margin-top: 0;
+    }
+
+    &__qualities {
+        min-width: 37.5rem;
+        margin-right: 6rem;
+
+        &_list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 3rem;
+            list-style-type: none;
+        }
+
+        &_name {
+            border: 0;
+            background-color: transparent;
+            font-weight: 700;
+            font-size: 3.8rem;
+            line-height: 4.6rem;
+            color: $grey-text;
+            height: 4.6rem;
+            cursor: pointer;
+        }
+
+        &_name:hover {
+            color: $accent;
+        }
+    }
+}
+
+.name--active {
+    background: $gradient-redtextreverse;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about__content {
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &_title {
+        padding-left: 6rem;
+        margin-bottom: 3rem;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 3.7rem;
+        color: $white;
+    }
+
+    &_discription {
+        max-width: 861px;
+        padding-left: 6rem;
+        font-weight: 400;
+        font-size: 1.9rem;
+        line-height: 3rem;
+        color: $white;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .about__wrapper {
+        padding: 6rem 0;
+        flex-direction: column;
+    }
+
+    .about__qualities {
+        margin: 0;
+        padding-left: 6rem;
+
+        &_list {
+            flex-flow: row nowrap;
+            white-space: nowrap;
+            overflow-x: auto;
+            margin: 0 0 6rem 0;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+            display: none;
+            }
+        }
+    }
+
+    .about__content {
+        padding: 0 6rem;
+        border-left: none;
+
+        &_title {
+            padding: 6rem 0 0 0 ;
+            border-top: 4px solid rgba(255, 255, 255, 0.3);
+        }
+
+        &_discription {
+            padding-left: 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 612px)  {
+    .about__wrapper {
+        padding: 3rem 0;
+    }
+
+    .about__qualities {
+        padding-left: 3rem;
+        min-width: 0;
+
+        &_list {
+            margin: 0 0 3rem 0;
+        }
+
+        &_name {
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 3.7rem;
+        }
+    }
+
+    .about__content {
+        padding: 0 3rem;
+
+        &_title {
+            padding: 3rem 0 0 0 ;
+            font-size: 2rem;
+            line-height: 2.4rem;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.publications {
+    background-color: $grey-bg;
+}
+
+.publications__wrapper {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 3rem 6rem 3rem 6rem;
+}
+
+.publications__section-name {
+    margin-bottom: 1rem;
+}
+
+.name-section {
+
+    & a {
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: $active-regular;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    & a::after {
+        content: url("data:image/svg+xml,%3Csvg width='8' height='11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1 6 5.5 1.5 10' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E");
+        padding-left: 0.5rem;
+    }
+
+     & :hover {
+        color: $accent;
+    }
+
+    & :hover::after {
+        content: url("data:image/svg+xml,%3Csvg width='8' height='11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1 6 5.5 1.5 10' stroke='%23F0145A' stroke-width='2'/%3E%3C/svg%3E");
+        padding-left: 0.5rem;
+    }
+}
+
+.publication__title {
+    display: inline-block;
+    margin-bottom: 3rem;
+
+    & h2 {
+        font-weight: 700;
+        font-size: 3.8rem;
+        line-height: 4.6rem;
+        background: $gradient-redtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
+.publications__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    &_column {
+        min-width: 281px;
+        flex: 1;
+        background-color: $white;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        text-decoration: none;
+    }
+
+
+    &_column-image {
+        height: 200px;
+        overflow: hidden;
+        margin: 0 0 3rem 0;
+    }
+
+    &_column-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &_column-title {
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: $active-regular;
+        margin: 0 3rem 1.5rem 3rem;
+    }
+
+    &_column:hover .publications__container_column-title {
+        color: $accent;
+    }
+
+    &_column-date {
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: $grey-text;
+        text-transform: uppercase;
+        margin: 0 3rem 1.5rem 3rem;
+    }
+
+    &_column-discription {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        color: $black;
+        padding-top: 1.5rem;
+        border-top: 4px solid $grey-separator;
+        margin: 0 3rem 3rem 3rem;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .publications__wrapper {
+        padding: 3rem;
+    }
+
+    .publication__title h2 {
+        font-size: 3rem;
+        line-height: 3.7rem;
+    }
+
+    .publications__container_column {
+        min-width: 259px ;
+    }
+}

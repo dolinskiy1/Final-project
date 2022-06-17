@@ -1,0 +1,64 @@
+.header-background {
+    text-align: center;
+    margin-top: -114.7px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+
+    &__image {
+        position: absolute;
+        width: 87.23vh;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__scroll {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        z-index: 2;
+    }
+
+    &__scroll:hover svg > *,
+    &__scroll:focus svg > * {
+        stroke: $accent;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 3.8rem;
+        line-height: 4.6rem;
+        color: $white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 47.7vh;
+        width: 552px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header-background {
+        text-align: center;
+        margin-top: -216.13px;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .header-background {
+        text-align: center;
+        margin-top: -92px;
+    }
+
+    .header-background__text {
+        max-width: 315px;
+        bottom: 38.5vh;
+    }
+}
+
+
+

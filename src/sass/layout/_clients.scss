@@ -1,0 +1,102 @@
+.clients__wrapper {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 6rem 0 6rem 0;
+    text-align: center;
+}
+
+.clients__title {
+    margin-bottom: 3rem;
+
+    & h2 {
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: $main-regular;
+    }
+}
+
+.clients__container {
+    border-radius: 12px;
+    overflow: hidden;
+
+    &_column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &_column-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 256px;
+        height: 120px;
+        flex: 1 1 25%;
+    }
+
+}
+
+.image--hillel {
+    background-color: #1C4280;
+}
+
+.image--wannabiz {
+    background-color: #143646;
+}
+
+.image--tabgerine {
+    background-color: #F48B30;
+}
+
+.image--3dlook {
+    background-color: #9E4DC3;
+}
+
+.image--artprint {
+    background-color: #1D4568;
+}
+
+.image--adtelligent {
+    background-color: #E2E2E4;
+}
+
+.image--orangear {
+    background-color: #FD9339;
+}
+
+.image--clickky {
+    background-color: #C71C36;
+}
+
+.image--ecoleasing {
+    background-color: #DCF3F9;
+}
+
+.image--ingratek {
+    background-color: #EAEAEA;
+}
+
+.image--citypark {
+    background-color: #282240;
+}
+
+.image--ultimatecard {
+    background-color: #000000;
+}
+
+@media screen and (max-width: 1720px) {
+    .clients__wrapper {
+        padding: 6rem 0 0 0;
+    }
+
+    .clients__container {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .clients__container_column-image:nth-last-child(-n+6) {
+        display: none;
+    }
+}
+

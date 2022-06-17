@@ -1,0 +1,66 @@
+@import "./utils/variables";
+@import "./base/typography";
+@import "./base/normalize";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Montserrat, sans-serif ;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: black;
+}
+
+@import "./layout/header.scss";
+@import "./layout/header-background.scss";
+
+.gradient {
+  width: 100%;
+  position: relative;
+  background: $gradient-supersoft;
+  border-radius: 0px 0px 12px 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1rem;
+    bottom: -1rem;
+    left: 50%;
+    width: calc(100% - 4rem);
+    transform: translateX(-50%);
+    border-radius: 0 0 1.2rem 1.2rem;
+    background-color: #CACADB;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1rem;
+    bottom: -2rem;
+    left: 50%;
+    width: calc(100% - 8rem);
+    transform: translateX(-50%);
+    border-radius: 0 0 1.2rem 1.2rem;
+    background-color: #E7E7F2;
+  }
+}
+
+@import "./layout/about.scss";
+@import "./layout/services.scss";
+@import "./layout/team.scss";
+@import "./layout/clients.scss";
+@import "./layout/publications.scss";
+@import "./layout/footer.scss";
