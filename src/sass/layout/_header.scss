@@ -96,6 +96,12 @@
         z-index: 5;
     }
 
+    // &_adress {
+    //     display: flex;
+    //     gap: 10px;
+    //     align-items: center;
+    // }
+
     &_adress p {
         font-weight: 400;
         font-size: 1.6rem;
@@ -113,7 +119,7 @@
             height: 6px;
             border-radius: 50%;
             background-color: $grey-text;
-            margin: 7px 10px;
+            margin: 0 10px;
         }
     }
 
@@ -136,7 +142,7 @@
             height: 6px;
             border-radius: 50%;
             background-color: $grey-text;
-            margin: 7px 10px;
+            margin: 0 10px;
         }
     }
 
