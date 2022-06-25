@@ -1,30 +1,8 @@
 @import "../utils/variables";
 @import "../base/typography";
 @import "../base/normalize";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-*::after, *::before {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-}
-
-body {
-  font-family: Montserrat, sans-serif ;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.8rem;
-  color: black;
-}
-
-@import "../layout/header-light.scss";
+@import "../base/general";
+@import "../layout/header.scss";
 @import "../layout/article.scss";
 @import "../layout/publications.scss";
 @import "../layout/footer.scss";

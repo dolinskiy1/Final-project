@@ -10,11 +10,16 @@
   </head>
 
   <body>
+  <section class="gradient">
+    <div class="header-background">
+      <img class="header-background__image" src="./img/h-logo.png" alt="h-logo">
+
+
     <header class="header">
       <div class="header__wrapper">
 
         <div class="header__logo">
-          <img src="./img/icons/logo.svg" alt="logo">
+          <a href="index.html"><img src="./img/icons/logo.svg" alt="logo"></a>
         </div>
 
         <div class="header__info">
@@ -32,18 +37,19 @@
               </li>
             </ul>
           </div>
-          <div class="dot"><svg width="6" height="7" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3.5" r="3" fill="#E6E6F0"/></svg></div>
-          <div class="header__info_adress">
-            <p>Kyiv, Mechnikova str, 14/1</p>
-          </div>
-          <div class="dot"><svg width="6" height="7" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3.5" r="3" fill="#E6E6F0"/></svg></div>
-          <div class="header__info_phone">
-            <p>0800 211 927</p>
-          </div>
-          <div class="dot"><svg width="6" height="7" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3.5" r="3" fill="#E6E6F0"/></svg></div>
-          <div class="header__info_link">
-            <a href="#"><svg width="24" height="25" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M-1-1h582v402H-1z"/><g><path d="M24 12.573C24 5.905 18.627.5 12 .5S0 5.905 0 12.573C0 18.6 4.388 23.594 10.125 24.5v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.93-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24.5C19.612 23.594 24 18.6 24 12.573z"/></g></svg></a>
-          </div>
+
+          <ul class="header__info_media">
+            <li class="header__info_adress">
+              <p>Kyiv, Mechnikova str, 14/1</p>
+            </li>
+            <li class="header__info_phone">
+              <a href="tel:0800211927">0800 211 927</a>
+            </li>
+            <li class="header__info_link">
+              <a href="#" target="_blank"><svg width="24" height="25" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M-1-1h582v402H-1z"/><g><path d="M24 12.573C24 5.905 18.627.5 12 .5S0 5.905 0 12.573C0 18.6 4.388 23.594 10.125 24.5v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.93-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24.5C19.612 23.594 24 18.6 24 12.573z"/></g></svg></a>
+            </li>
+          </ul>
+
         </div>
 
         <div class="header__nav">
@@ -66,7 +72,7 @@
                   <a class="header__link" href="#">team</a>
                 </li>
                 <li class="header__item">
-                  <a class="header__link" href="#">publications</a>
+                  <a class="header__link" href="publication_entry.html">publications</a>
                 </li>
                 <li class="header__item">
                   <a class="header__link" href="#">contact</a>
@@ -75,25 +81,23 @@
             </nav>
           </div>
         </div>
-
       </div>
-
     </header>
+
+    <a href="#" class="header-background__scroll">
+      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
+      <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+      </svg>
+    </a>
+    <p class="header-background__text" >you legal solutions provider</p>
+  </div>
 
     <main>
 
-      <section class="gradient">
 
-        <div class="header-background">
-          <img class="header-background__image" src="./img/h-logo.png" alt="h-logo">
-          <a href="#" class="header-background__scroll">
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
-            <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
-            </svg>
-          </a>
-          <p class="header-background__text" >you legal solutions provider</p>
-        </div>
+
+
 
 
        <section class="about">
@@ -226,40 +230,40 @@
             <div class="clients__container_column">
 
               <div class="clients__container_column-image image--hillel">
-                <img src="./img/clients-hillel.png" alt="hillel">
+                <a href="#" target="_blank"><img src="./img/clients-hillel.png" alt="hillel"></a>
               </div>
               <div class="clients__container_column-image image--wannabiz">
-                <img src="./img/clients-wannabiz.png" alt="wannabiz">
+                <a href="#" target="_blank"><img src="./img/clients-wannabiz.png" alt="wannabiz"></a>
               </div>
               <div class="clients__container_column-image image--tabgerine">
-                <img src="./img/clients-tapgerine.png" alt="tabgerine">
+                <a href="#" target="_blank"><img src="./img/clients-tapgerine.png" alt="tabgerine"></a>
               </div>
               <div class="clients__container_column-image image--3dlook">
-                <img src="./img/clients-3dlook.png" alt="3dlook">
+                <a href="#" target="_blank"><img src="./img/clients-3dlook.png" alt="3dlook"></a>
               </div>
               <div class="clients__container_column-image image--orangear">
-                <img src="./img/clients-orangear.png" alt="orangear">
+                <a href="#" target="_blank"><img src="./img/clients-orangear.png" alt="orangear"></a>
               </div>
               <div class="clients__container_column-image image--adtelligent">
-                <img src="./img/clients-adtelligent.png" alt="adtelligent">
+                <a href="#" target="_blank"><img src="./img/clients-adtelligent.png" alt="adtelligent"></a>
               </div>
               <div class="clients__container_column-image image--clickky">
-                <img src="./img/clients-clickky.png" alt="clickky">
+                <a href="#" target="_blank"><img src="./img/clients-clickky.png" alt="clickky"></a>
               </div>
               <div class="clients__container_column-image image--ecoleasing">
-                <img src="./img/clients-ecoleasing.png" alt="ecoleasing">
+                <a href="#" target="_blank"><img src="./img/clients-ecoleasing.png" alt="ecoleasing"></a>
               </div>
               <div class="clients__container_column-image image--ingratek">
-                <img src="./img/clients-ingratek.png" alt="ingratek">
+                <a href="#" target="_blank"><img src="./img/clients-ingratek.png" alt="ingratek"></a>
               </div>
               <div class="clients__container_column-image image--citypark">
-                <img src="./img/clients-citypark.png" alt="citypark">
+                <a href="#" target="_blank"><img src="./img/clients-citypark.png" alt="citypark"></a>
               </div>
               <div class="clients__container_column-image image--artprint">
-                <img src="./img/clients-artprint.png" alt="artprint">
+                <a href="#" target="_blank"><img src="./img/clients-artprint.png" alt="artprint"></a>
               </div>
               <div class="clients__container_column-image image--ultimatecard">
-                <img src="./img/clients-ultimatecard.png" alt="ultimatecard">
+                <a href="#" target="_blank"><img src="./img/clients-ultimatecard.png" alt="ultimatecard"></a>
               </div>
 
             </div>
@@ -287,7 +291,7 @@
               <p class="publications__container_column-date">April 22</p>
               <p class="publications__container_column-discription">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
             </a>
-            <a href="#" class="publications__container_column">
+            <a href="publication_entry.html" class="publications__container_column">
               <div class="publications__container_column-image">
                 <img src="./img/publication-gdpr.jpg" alt="gdpr">
               </div>
@@ -314,35 +318,32 @@
 
         <div class="footer__column">
 
-          <div class="footer__column_location">
-            <div class="footer__column_location-adress">
+          <ul class="footer__column_location">
+            <li class="footer__column_location-adress">
               <p>Kyiv, Mechnikova str, 14/1</p>
-            </div>
-            <div class="dot-footer"><svg width="6" height="7" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3.5" r="3" fill="#B3B3BA"/></svg></div>
-            <div class="footer__column_location-link">
-              <a href="#">On map</a>
-            </div>
-          </div>
-
-          <div class="footer__column_media">
-            <div class="footer__column_media-facebook">
+            </li>
+            <li class="footer__column_location-link">
+              <a href="#" target="_blank">On map</a>
+            </li>
+          </ul>
+  
+          <ul class="footer__column_media">
+            <li class="footer__column_media-facebook">
               <a href="#">
                 <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M-1-1h582v402H-1z"/><g><path d="M38 19.116C38 8.56 29.493 0 19 0S0 8.559 0 19.116C0 28.657 6.948 36.566 16.031 38V24.642h-4.824v-5.526h4.824v-4.211c0-4.791 2.837-7.438 7.177-7.438 2.079 0 4.253.374 4.253.374v4.704h-2.396c-2.36 0-3.096 1.473-3.096 2.985v3.586h5.27l-.843 5.526h-4.427V38C31.052 36.566 38 28.658 38 19.116z"/></g></svg>
               </a>
-            </div>
-            <div class="dot-footer"><svg width="6" height="7" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3.5" r="3" fill="#B3B3BA"/></svg></div>
-            <div class="footer__column_media-phone">
-              <p>0800 211 927</p>
-            </div>
-            <div class="dot-footer"><svg width="6" height="7" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3.5" r="3" fill="#B3B3BA"/></svg></div>
-            <div class="footer__column_media-mail">
-              <a href="#">contact@forstudy.space</a>
-            </div>
-          </div>
+            </li>
+            <li class="footer__column_media-phone">
+              <a href="tel:0800211927">0800 211 927</a>
+            </li>
+            <li class="footer__column_media-mail">
+              <a href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+            </li>
+          </ul>
 
           <div class="footer__column_copyright">
             <div class="footer__column_copyright-text">
-              <p>© 2021 HLEGAL Law company, LLC</p>
+              <p>&copy 2021 HLEGAL Law company, LLC</p>
             </div>
           </div>
 

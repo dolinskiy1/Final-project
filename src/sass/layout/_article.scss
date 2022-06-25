@@ -4,116 +4,109 @@
     padding: 60px;
 }
 
-.article__image {
-    height: 50rem;
-    overflow: hidden;
-    margin: 0 0 3rem 0;
-    border-radius: 1.2rem;
+.cms-content {
+    & div {
+        height: 50rem;
+        overflow: hidden;
+        margin: 0 0 3rem 0;
+        border-radius: 1.2rem;
 
-    & img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
-}
 
-.article__title {
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 3.7rem;
-    margin: 0 0 1.5rem 0;
-    color: $main-regular;
-}
+    & h1 {
+        font-weight: 700;
+        font-size: 3.8rem;
+        line-height: 4.6rem;
+        margin: 0 0 3rem 0;
+        background: $gradient-redtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
 
-.article__date {
-    font-weight: 700;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    color: $grey-text;
-    padding-bottom: 3rem;
-    border-bottom: 4px solid $grey-separator;
-    margin: 0 0 3rem 0;
-}
+    & h2 {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 3.7rem;
+        margin: 0 0 1.5rem 0;
+        color: $main-regular;
+    }
 
-.article__text {
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    color: $black;
-    margin: 0 0 3rem 0;
-}
-
-.article__warning-text {
-    font-weight: 700;
-    font-size: 3.8rem;
-    line-height: 4.6rem;
-    margin: 0 0 3rem 0;
-    background: $gradient-redtext;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.article__subtitle {
-    font-weight: 700;
-    font-size: 2.2rem;
-    line-height: 2.7rem;
-    color: $main-alt;
-    margin: 0 0 1.5rem 0;
-}
-
-.article__requirements {
-    margin: 0 0 3rem 0;
-
-    &-text p {
-        display: flex;
-        font-weight: 400;
-        font-size: 1.8rem;
-        line-height: 2.6rem;
-        color: $black;
+    & h3 {
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        color: $main-alt;
         margin: 0 0 1.5rem 0;
     }
-}
 
-.requirement--one p::before {
-    content: "1.";
-    color: $accent;
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.6rem;
-    margin: 0 1rem 0 1.8rem;
-}
-
-.requirement--two p::before {
-    display: inline-block;
-    content: "2.";
-    color: $accent;
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.6rem;
-    margin: 0 1rem 0 1.8rem;
-}
-
-.article__content_image {
-    max-width: 640px;
-    text-align: center;
-    margin: 0 auto 3rem auto;
-
-    & img {
-    width: 100%;
-    height: auto;
-    margin: 0 0 1.5rem 0;
-    }
-
-    &-text {
-        font-weight: 400;
-        font-size: 1.4rem;
-        line-height: 2.2rem;
+    & span {
+        display: block;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
         color: $grey-text;
+        padding-bottom: 3rem;
+        border-bottom: 4px solid $grey-separator;
+        margin: 0 0 3rem 0;
+    }
+
+    & p {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        color: $black;
+        margin: 0 0 3rem 0;
+    }
+
+    & ol {
+        margin: 0 0 3rem 4rem;
+        list-style-position: outside;
+
+        & li {
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            color: $black;
+            margin: 0 0 1.5rem 0;
+        }
+    }
+
+    & ol li::marker {
+        color: $accent;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        padding: 0 1rem 0 0;
+    }
+
+    & figure {
+        max-width: 640px;
+        text-align: center;
+        margin: 0 auto 3rem auto;
+    
+        & img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 1.5rem 0;
+        }
+    
+        & figcaption {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            color: $grey-text;
+        }
     }
 }
+
 
 .article__socials {
     padding: 3rem 0 0 0 ;
@@ -121,14 +114,17 @@
 
     &_list {
         display: flex;
-        gap: 2.8rem;
-        margin-left: 0.9rem;
+        gap: 1rem;
     }
 
     &_item {
         list-style-type: none;
         position: relative;
         height: 2.4rem;
+    }
+
+    &_link {
+        padding: 9px;
     }
 
     &_item::before {

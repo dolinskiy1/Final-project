@@ -1,6 +1,5 @@
 .header-background {
     text-align: center;
-    margin-top: -114.7px;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -44,14 +43,12 @@
 @media screen and (max-width: 1023px) {
     .header-background {
         text-align: center;
-        margin-top: -216.13px;
     }
 }
 
 @media screen and (max-width: 612px) {
     .header-background {
         text-align: center;
-        margin-top: -92px;
     }
 
     .header-background__text {
